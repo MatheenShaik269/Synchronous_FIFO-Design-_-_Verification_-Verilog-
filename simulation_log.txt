@@ -1,0 +1,83 @@
+# run 1000ns
+============Test case 1 : no.of.write operations == no.of.read operation===========
+data_out = 0 
+data_in = 10
+data_in = 20
+data_in = 30
+data_out = 10 
+data_out = 20 
+data_out = 30 
+===========Test Case 2 : writing and reading at a time===========
+data_in = 1
+data_out = 1 
+------- empty = 1  full = 0 -------
+data_in = 2
+data_out = 2 
+------- empty = 1  full = 0 -------
+data_in = 4
+data_out = 4 
+------- empty = 1  full = 0 -------
+data_in = 8
+data_out = 8 
+------- empty = 1  full = 0 -------
+data_in = 16
+data_out = 16 
+------- empty = 1  full = 0 -------
+data_in = 32
+data_out = 32 
+------- empty = 1  full = 0 -------
+data_in = 64
+data_out = 64 
+------- empty = 1  full = 0 -------
+data_in = 128
+data_out = 128 
+------- empty = 1  full = 0 -------
+data_in = 256
+data_out = 256 
+------- empty = 1  full = 0 -------
+============Test case 3 : No.of write operations are greater than fifo depth===========
+data_in = 0
+------- empty = 0  full = 0 -------
+data_in = 2
+------- empty = 0  full = 0 -------
+data_in = 4
+------- empty = 0  full = 0 -------
+data_in = 6
+------- empty = 0  full = 0 -------
+data_in = 8
+------- empty = 0  full = 0 -------
+data_in = 10
+------- empty = 0  full = 0 -------
+data_in = 12
+------- empty = 0  full = 0 -------
+data_in = 14
+------- empty = 0  full = 1 -------
+data_in = 16
+------- empty = 0  full = 1 -------
+data_in = 18
+------- empty = 0  full = 1 -------
+Test case 3 sub case : Reading content of fifo
+data_out = 0 
+------ empty = 0  full = 0 -------
+data_out = 2 
+------ empty = 0  full = 0 -------
+data_out = 4 
+------ empty = 0  full = 0 -------
+data_out = 6 
+------ empty = 0  full = 0 -------
+data_out = 8 
+------ empty = 0  full = 0 -------
+data_out = 10 
+------ empty = 0  full = 0 -------
+data_out = 12 
+------ empty = 0  full = 0 -------
+data_out = 14 
+------ empty = 1  full = 0 -------
+data_out = 14 
+------ empty = 1  full = 0 -------
+data_out = 14 
+------ empty = 1  full = 0 -------
+$finish called at time : 705 ns : File "C:/Users/mathe/Desktop/HOME/Desktop/Main Folder/ECE/PROJECTS/FIFO_SYNC/FIFO_SYNC.srcs/sim_1/new/fifo_sync_tb.v" Line 114
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_sync_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2258.508 ; gain = 3.199
